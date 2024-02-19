@@ -1,9 +1,14 @@
-import React from 'react'
+import Link from "next/link";
 
-function Home() {
+
+
+export default function Home() {
   return (
-    <h1>Welcome to Homepage</h1>
-  )
+    <div>
+    <h1>Welcome to homepage</h1>
+    <Link href="/blog">Blog</Link>
+    <Link href="/products">products</Link>
+    <Link href="/register" >register</Link>
+    </div>
+  );
 }
-
-export default Home
